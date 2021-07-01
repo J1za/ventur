@@ -1,0 +1,38 @@
+@import '../../../../assets/styles/variables.module.scss';
+
+.header {
+  padding: 24px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $White;
+  z-index: 10;
+  width: 100%;
+  @media (max-width: 767px) {
+    padding: 25px 0;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 15;
+    @media (max-width: 767px) {
+      
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &_white {
+    background: $bcgWhite;
+    color: $foregroundBlack;
+  }
+  &__nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

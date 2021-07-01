@@ -1,0 +1,157 @@
+.postBody {
+	&__inner {
+		border-bottom: 1px solid #f2f2f2;
+		padding-bottom: 40px;
+	}
+	&__link {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 776px) {
+			margin-top: 10px;
+		}
+	}
+	p,
+	ul,
+	ol {
+		font-size: 20px;
+		line-height: 30px;
+		margin-top: 25px;
+		@media (max-width: 991px) {
+			font-size: 16px;
+			line-height: 26px;
+		}
+		@media (max-width: 776px) {
+			margin-top: 15px;
+			font-size: 14px;
+			line-height: 22px;
+		}
+		strong {
+			font-weight: 600;
+		}
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	pre {
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+		box-sizing: border-box;
+		// box-sizing: border-box;
+	}
+
+	img {
+		height: auto;
+		width: 100%;
+		object-fit: contain;
+	}
+
+	pre {
+		background: #0a2e36;
+		color: white;
+		padding: 15px;
+		border-radius: 6px;
+		margin-top: 15px;
+		margin-right: 15px;
+		margin-left: 15px;
+		width: 100%;
+		box-sizing: border-box;
+		width: 100%;
+		overflow: auto;
+	}
+
+	ul,
+	ol {
+		padding: revert;
+		margin-left: auto;
+		margin-right: auto;
+		box-sizing: border-box;
+		list-style: unset;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		@media (max-width: 776px) {
+			padding-left: 20px;
+		}
+	}
+	ul li,
+	ol li {
+		margin-bottom: 5px;
+		font-size: 20px;
+		line-height: 32px;
+		@media (max-width: 776px) {
+			margin-bottom: 0px;
+			font-size: 14px;
+			line-height: 22px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		margin-top: 35px;
+		margin-bottom: 20px;
+		font-weight: 600;
+		@media (max-width: 776px) {
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+	}
+	h5 {
+		margin-bottom: 15px;
+	}
+}
+
+.gistTitle {
+	display: none;
+}
+
+.gist {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+}
+.postBody__followUs {
+	display: flex;
+	align-items: center;
+	p {
+		margin-right: 30px;
+		width: auto;
+		margin-top: 0;
+		font-size: 18px;
+		line-height: 27px;
+		color: #bdbdbd;
+		@media (max-width: 776px) {
+			display: none;
+		}
+	}
+	a {
+		width: 24px;
+		height: 24px;
+		margin: 0 8px;
+		transition: 0.3s;
+		&:hover {
+			transform: scale(1.1);
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+}

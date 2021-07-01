@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "URW DIN";
+  src: url("/fonts/URWDIN-Bold.woff2") format("woff2"),
+    url("/fonts/URWDIN-Bold.woff") format("woff"),
+    url("/fonts/URWDIN-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "URW DIN";
+  src: url("/fonts/URWDIN-Light.woff2") format("woff2"),
+    url("/fonts/URWDIN-Light.woff") format("woff"),
+    url("/fonts/URWDIN-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "URW DIN";
+  src: url("/fonts/URWDIN-Italic.woff2") format("woff2"),
+    url("/fonts/URWDIN-Italic.woff") format("woff"),
+    url("/fonts/URWDIN-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "URW DIN";
+  src: url("/fonts/URWDIN-Medium.woff2") format("woff2"),
+    url("/fonts/URWDIN-Medium.woff") format("woff"),
+    url("/fonts/URWDIN-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "URW DIN";
+  src: url("/fonts/URWDIN-Regular.woff2") format("woff2"),
+    url("/fonts/URWDIN-Regular.woff") format("woff"),
+    url("/fonts/URWDIN-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "URW DIN";
+  src: url("/fonts/URWDIN-Thin.woff2") format("woff2"),
+    url("/fonts/URWDIN-Thin.woff") format("woff"),
+    url("/fonts/URWDIN-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'URW DIN';
+  src: url('/fonts/URWDIN-Demi.woff2') format('woff2'),
+      url('/fonts/URWDIN-Demi.woff') format('woff'),
+      url('/fonts/URWDIN-Demi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Acumin pro  */
+/* Acumin pro  */
+/* Acumin pro  */
+/* Acumin pro  */
+/* Acumin pro  */
+
+/* @font-face {
+  font-family: 'Acumin Pro';
+  src: url('/fonts/Acumin/AcuminPro-Bold.woff2') format('woff2'),
+    url('/fonts/Acumin/AcuminPro-Bold.woff') format('woff'), url('/fonts/Acumin/AcuminPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('/fonts/Acumin/AcuminPro-Light.woff2') format('woff2'),
+    url('/fonts/Acumin/AcuminPro-Light.woff') format('woff'),
+    url('/fonts/Acumin/AcuminPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('/fonts/Acumin/AcuminPro-Italic.woff2') format('woff2'),
+    url('/fonts/Acumin/AcuminPro-Italic.woff') format('woff'),
+    url('/fonts/Acumin/AcuminPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('/fonts/Acumin/AcuminPro-Medium.woff2') format('woff2'),
+    url('/fonts/Acumin/AcuminPro-Medium.woff') format('woff'),
+    url('/fonts/Acumin/AcuminPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('/fonts/Acumin/AcuminPro-Regular.woff2') format('woff2'),
+    url('/fonts/Acumin/AcuminPro-Regular.woff') format('woff'),
+    url('/fonts/Acumin/AcuminPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('/fonts/Acumin/AcuminPro-Thin.woff2') format('woff2'),
+    url('/fonts/Acumin/AcuminPro-Thin.woff') format('woff'), url('/fonts/Acumin/AcuminPro-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+} */

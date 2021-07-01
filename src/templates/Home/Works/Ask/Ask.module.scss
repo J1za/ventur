@@ -1,0 +1,116 @@
+@import '../../../../assets/styles/variables.module.scss';
+
+// styles for paginator from slider in global.css
+
+.ask {
+  padding-bottom: 45px;
+  border-bottom: 1px solid #ffffff2d;
+
+  &__container {
+    @extend %sectionContainerForTitles;
+  }
+
+  &__name {
+    @extend %workName;
+    color: #5964ff;
+  }
+
+  &__title {
+    @extend %workTitle;
+  }
+
+  &__subTitle {
+    @extend %workSubTitle;
+  }
+
+  &__slider {
+    // display: none;
+  }
+
+  &__mobilePreview {
+    display: none;
+    margin-bottom: 35px;
+  }
+
+  &__mobImg {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  &__listImg {
+    display: flex;
+
+    &_img {
+      width: 100%;
+    }
+  }
+
+  &__badgeName {
+    display: none;
+  }
+
+  &__badgeList {
+    @extend %workBadgeList;
+  }
+
+  &__badgeItem {
+    @extend %workBadgeItem;
+  }
+
+  &__badgeTitle {
+    @extend %workBadgeTitle;
+  }
+
+  &__blockquote {
+    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    margin-top: 56px;
+
+    &_text {
+      margin: auto;
+      margin-bottom: 15px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      max-width: 695px;
+      & > img {
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        left: -5px;
+      }
+    }
+
+    &_subText {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ask {
+    &__badgeName {
+      display: block;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+
+    &__slider {
+      min-height: 383px;
+      display: block;
+    }
+
+    &__mobilePreview {
+      display: none;
+    }
+  }
+}

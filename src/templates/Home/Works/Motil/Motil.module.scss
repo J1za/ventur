@@ -1,0 +1,116 @@
+@import '../../../../assets/styles/variables.module.scss';
+
+.motil {
+  padding-bottom: 44px;
+  padding-top: 80px;
+  @media (max-width: 991px) {
+    padding: 45px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 25px 0;
+  }
+  &__inner{
+    @extend %workInner;
+  }
+
+  &__name {
+    @extend %workName;
+    color: $blue;
+  }
+
+  &__title {
+    @extend %workTitle;
+  }
+
+  &__subTitle {
+    @extend %workSubTitle;
+  }
+
+  &__listImg {
+    display: flex;
+    &_item {
+    }
+
+    &_img {
+      width: 100%;
+    }
+  }
+
+  &__mobilePreview {
+    margin-bottom: 35px;
+    display: none;
+  }
+
+  &__slider {
+    display: block;
+  }
+
+  &__mobImg {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  &__badgeName {
+    display: none;
+  }
+
+  &__badgeList {
+    @extend %workBadgeList;
+  }
+
+  &__badgeItem {
+    @extend %workBadgeItem;
+  }
+
+  &__badgeTitle {
+    @extend %workBadgeTitle;
+  }
+  &__blockquote {
+    text-align: center;
+    margin-top: 50px;
+    @media (max-width: 991px) {
+      margin-top: 40px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
+    &_text {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      max-width: 970px;
+      font-weight: 500;
+      @media (max-width: 991px) {
+        margin-bottom: 20px;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &_subText {
+      color: $grey;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .motil {
+    &__badgeName {
+      display: block;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+
+    &__slider {
+      min-height: 383px;
+      display: block;
+    }
+
+    &__mobilePreview {
+      display: none;
+    }
+  }
+}

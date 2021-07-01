@@ -1,0 +1,81 @@
+.input {
+	label {
+		display: block;
+		width: fit-content;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 18px;
+		margin-bottom: 10px;
+		color: #6e77ee;
+	}
+
+	input {
+		border: none;
+		outline: none;
+		background: transparent;
+		border-radius: 5px;
+		width: 100%;
+		font-size: 16px;
+		color: #4f4f4f;
+		font-weight: 500;
+		line-height: 18px;
+		background-color: #fff;
+		height: 70px;
+		padding: 0 25px;
+		border: 1px solid transparent;
+		transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+		@media (max-width: 639px) {
+            height: 60px;
+			font-size: 14px;
+			line-height: 22px;
+        }
+		&::placeholder {
+			font-family: "URW DIN";
+			font-style: normal;
+			font-weight: normal;
+			color: #828282;
+			font-weight: 500;
+			transition: 0.3s;
+		}
+		&:focus {
+			border: 1px solid #3d2ee2;
+			&::placeholder {
+				opacity: 0;
+			}
+		}
+	}
+	&__icon {
+		width: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+	}
+	&__sign {
+		padding: 0 15px;
+	}
+
+	&__error {
+		margin-top: 5px;
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 500;
+		color: #eb5757;
+	}
+	&_grey {
+		input {
+			background: #f8f8f8;
+			&:focus {
+				background: rgba(248, 248, 248, 0.5);
+			}
+		}
+	}
+	&_white {
+		input {
+			background: rgba(255, 255, 255, 0.2);
+			&::placeholder {
+				color: #f8f8f8;
+			}
+		}
+	}
+}

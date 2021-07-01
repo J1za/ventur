@@ -1,0 +1,161 @@
+@import "../../../assets/styles/variables.module.scss";
+
+.development {
+    padding: 130px 0;
+    @media (max-width: 991px) {
+        padding: 90px 0;
+    }
+    @media (max-width: 776px) {
+        padding: 60px 0;
+    }
+    h1 {
+        text-align: center;
+        max-width: 1000px;
+        margin: 0 auto 80px;
+        @media (max-width: 991px) {
+            margin: 0 auto 60px
+        }
+        @media (max-width: 776px) {
+            margin: 0 auto 30px;
+            text-align: left;
+        }
+        span {
+            color: $blue;
+        }
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        @media (max-width: 1199px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 991px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+        }
+    }
+}
+.item {
+    padding: 30px 30px 20px 30px;
+    background: $bcgWhite;
+    border-radius: 5px;
+    h2 {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    &__result {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        &_box {
+            background: #ffffff;
+            border: 1px solid rgba(242, 242, 242, 0.75);
+            box-shadow: 10px 15px 80px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+            padding: 15px;
+            min-height: 106px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        &_number {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: #3d2ee2;
+            border-radius: 0px 5px 0px 50px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #fff;
+            font-weight: 700;
+            padding: 3px 6px 5px 10px;
+            cursor: pointer;
+        }
+        &_icon {
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 5px;
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        &_title {
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+    &_questions {
+        margin: 20px -30px -20px;
+        padding: 20px 30px 20px;
+        border-top: 1px solid rgba(224, 224, 224, 0.5);
+        position: relative;
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                font-weight: 600;
+                color: $greyDark;
+            }
+        }
+        &__show {
+            color: $grey;
+            position: relative;
+            padding-right: 19px;
+            transition: 0.3s;
+            cursor: pointer;
+            &::before {
+                position: absolute;
+                content: url(../../../assets/images/icons/arrow-up.svg);
+                right: 0;
+                bottom: -1px;
+                transition: 0.3s;
+                filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(170deg) brightness(91%) contrast(89%);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+            }
+            &_active {
+                @extend .item_questions__show;
+                color: #4f4f4f;
+                &::before {
+                    filter: inherit;
+                    transform: inherit;
+                }
+            }
+        }
+        &__item {
+            position: absolute;
+            overflow: hidden;
+
+            left: 0;
+            padding: 30px;
+            padding-top: 15px;
+            border-radius: 0 0 5px 5px;
+            background: #f8f8f8;
+            transition: 0.3s;
+            animation: itemHeight 0.7s linear forwards;
+        }
+    }
+}
+
+@keyframes itemHeight {
+    0% {
+        max-height: 0px;
+    }
+    100% {
+        max-height: 500px;
+    }
+}

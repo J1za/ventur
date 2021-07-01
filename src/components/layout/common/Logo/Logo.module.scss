@@ -1,0 +1,48 @@
+@import '@/assets/styles/variables.module.scss';
+
+.logo {
+    color: white;
+    &__text {
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        &:hover{
+            .logo__part_bold{
+                color:  #3d2ee2;
+            }
+        }
+    }
+
+    &__descriptor {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__part {
+        &_bold {
+            font-weight: bold;
+            color: $greyDark;
+            transition: $transition;
+        }
+
+        &_thin {
+            font-weight: 100;
+            color: $grey;
+            transition: $transition;
+        }
+    }
+
+    &_small {
+        .logo__text {
+            font-size: 24px;
+        }
+    }
+
+    &_white {
+        .logo__part_thin{
+            color: #bdbdbd;
+        }
+        .logo__part_bold{
+            color: $White;
+        }
+    }
+}

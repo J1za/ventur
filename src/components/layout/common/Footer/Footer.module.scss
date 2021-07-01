@@ -1,0 +1,66 @@
+@import "../../../../assets/styles/variables.module.scss";
+
+.footer {
+  padding: 0;
+  background: $bcgWhite;
+  &__menu {
+    padding: 0;
+  }
+  &__minimal {
+    display: block;
+    background: $White;
+    .footer__top {
+      padding: 20px 0;
+    }
+  }
+  &__top {
+    padding: 60px 0;
+    border-bottom: 1px solid #e0e0e0;
+    @media (max-width: 991px) {
+      padding: 45px 0;
+    }
+    @media (max-width: 767px) {
+      padding: 30px 0;
+    }
+  }
+  &__container {
+    text-align: center;
+    margin: auto;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    @media (max-width: 550px) {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+    & > img {
+      margin: auto;
+    }
+  }
+
+  &__text {
+    color: $grey;
+  }
+
+  &__subTitle {
+    color: #bdbdbd;
+  }
+  &__bottom {
+    padding: 20px 0;
+    text-align: center;
+    @media (max-width: 767px) {
+      padding: 15px 0;
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 550px) {
+      flex-wrap: wrap;
+    }
+  }
+}

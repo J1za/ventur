@@ -1,0 +1,37 @@
+@import "../../../assets/styles/variables.module.scss";
+
+.form {
+  padding-top: 130px;
+  padding-bottom: 182px;
+  @media (max-width: 991px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 500;
+    color: $greyDark;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subTitle {
+    margin-bottom: 70px;
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}

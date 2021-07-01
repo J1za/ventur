@@ -1,0 +1,41 @@
+@import "../../../../assets/styles/variables.module.scss";
+
+.hero {
+  padding-top: 78px;
+  padding-bottom: 120px;
+  
+  @media (max-width: 1199px) {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 32px;
+    padding-bottom: 60px;
+  }
+  &__content {
+    max-width: 870px;
+  }
+
+  h1 {
+    color: $greyDark;
+    margin-bottom: 40px;
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+    strong {
+      color: $blue;
+      font-weight: 700;
+    }
+  }
+
+  p {
+    max-width: 770px;
+    margin-bottom: 30px;
+  }
+  button {
+    margin-top: 70px;
+    @media (max-width: 991px) {
+      margin-top: 40px;
+    }
+  }
+}

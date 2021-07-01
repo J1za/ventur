@@ -1,0 +1,53 @@
+{
+  "homepage": "http://j1za.github.io/{repo-name}",
+  "name": "ventur.digital",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "deploy": "gh-pages -d build",
+    "build": "next build",
+    "start": "next start",
+    "slicemachine": "start-slicemachine --port 9999"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^0.1.1",
+    "@prismicio/client": "^4.0.0",
+    "@react-hook/window-size": "^3.0.7",
+    "@types/node": "^14.11.2",
+    "@types/react": "^16.9.49",
+    "@types/react-burger-menu": "^2.6.2",
+    "@types/react-slick": "^0.23.4",
+    "@types/yup": "^0.29.7",
+    "axios": "^0.21.1",
+    "emailjs-com": "^2.6.3",
+    "essential-slices": "^1.0.3",
+    "localtunnel": "^2.0.1",
+    "mixpanel-browser": "^2.41.0",
+    "next": "^10.0.5",
+    "next-images": "^1.7.0",
+    "next-react-svg": "^1.1.2",
+    "next-slicezone": "^0.0.14",
+    "next-transpile-modules": "^6.4.0",
+    "prismic-javascript": "^3.0.2",
+    "prismic-reactjs": "^1.3.3",
+    "react": "16.13.1",
+    "react-burger-menu": "^3.0.3",
+    "react-content-loader": "^6.0.3",
+    "react-dom": "16.13.1",
+    "react-ga": "^3.3.0",
+    "react-hook-form": "^6.8.6",
+    "react-lazyload": "^3.2.0",
+    "react-reveal": "^1.2.2",
+    "react-toastify": "^7.0.3",
+    "react-tooltip": "^4.2.21",
+    "sass": "^1.26.11",
+    "theme-ui": "^0.6.2",
+    "typescript": "^4.0.3",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "slice-machine-ui": "^0.0.45"
+  }
+}

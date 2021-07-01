@@ -1,0 +1,32 @@
+.blog {
+    padding-top: 78px;
+    @media (max-width:991px) {
+        padding-top: 15px;
+    }
+    &__title {
+        color: #282828;
+        font-weight: 500;
+        margin-bottom: 30px;
+        @media (max-width:991px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__subtitle {
+        max-width: 650px;
+    }
+    &__inner {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 60px;
+        @media (max-width:991px) {
+            margin-top: 30px;
+        }
+        @media (max-width:850px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 30px;
+        }
+    }
+}
+

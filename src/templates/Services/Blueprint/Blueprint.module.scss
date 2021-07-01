@@ -1,0 +1,82 @@
+@import "../../../assets/styles/variables.module.scss";
+
+.blueprint {
+    padding: 130px 0;
+    background-color: $bcgWhite;
+    @media (max-width: 991px) {
+        padding: 90px 0;
+    }
+    @media (max-width: 767px) {
+        padding: 60px 0;
+    }
+    &__title {
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        font-weight: 500;
+        text-align: center;
+        @media (max-width: 1199px) {
+            margin-bottom: 70px;
+        }
+        @media (max-width: 997px) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        @media (max-width: 1199px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 776px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__item {
+        &:hover {
+            .blueprint__item_icon {
+                filter: invert(15%) sepia(67%) saturate(6072%) hue-rotate(248deg) brightness(89%) contrast(100%);
+            }
+            .blueprint__item_title {
+                color: $blue;
+            }
+        }
+        @media (max-width: 776px) {
+            text-align: center;
+            .blueprint__item_icon {
+                filter: invert(15%) sepia(67%) saturate(6072%) hue-rotate(248deg) brightness(89%) contrast(100%);
+            }
+            .blueprint__item_title {
+                color: $blue;
+            }
+        }
+        &_icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            @media (max-width: 776px) {
+                width: 40px;
+                height: 40px;
+                margin: 0 auto 15px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        &_title {
+            margin-bottom: 10px;
+            font-weight: 500;
+            transition: 0.1s;
+        }
+    }
+}
